@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Github, Linkedin, Mail, Heart, GraduationCap } from 'lucide-react';
 
 const Footer = () => {
@@ -12,12 +12,13 @@ const Footer = () => {
               Geeta Thakur
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
-             Frontend & Full-Stack Developer passionate about building responsive, efficient, and dynamic web applications.
-             Dedicated to turning ideas into functional, high-quality digital solutions.
+             Full Stack Developer passionate about building responsive, efficient, and dynamic web applications.
+             Skilled in React.js, Node.js, and databases, with a focus on delivering scalable solutions.
+             Dedicated to turning ideas into high-quality, real-world digital products.
             </p>
             <div className="flex items-center space-x-2 text-gray-400">
               <GraduationCap size={16} />
-              <span className="text-sm">B.Tech CSE (2026) • 7.44 CGPA</span>
+              <span className="text-sm">B.Tech CSE (2026)</span>
             </div>
           </div>
 
@@ -43,27 +44,27 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4 mb-4">
               <a
-                href="#"
+                href="https://github.com/geetathakur13"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/geeta-thakur-74a67328b"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="geetathakurr13@gmail.com"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-300"
               >
                 <Mail size={20} />
               </a>
             </div>
             <p className="text-gray-400 text-sm">
-              Open to internships and opportunities in MERN stack, full-stack, and frontend development.
-              Excited to collaborate on innovative projects and build impactful web applications.
+              Open to internships and entry-level opportunities in MERN stack, full-stack, and frontend development.
+              Passionate about building scalable web applications and contributing to impactful projects.
             </p>
           </div>
         </div>

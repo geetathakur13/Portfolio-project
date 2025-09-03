@@ -6,17 +6,17 @@ const About = () => {
     {
       icon: <Code className="w-8 h-8" />,
       title: "Frontend Development",
-      description: "Building responsive, interactive web applications with React.js and modern technologies"
+      description: "Building responsive, interactive web applications with React.js and modern technologies."
     },
     {
       icon: <Palette className="w-8 h-8" />,
-      title: "UI/UX Design",
-      description: "Creating beautiful, intuitive user interfaces with attention to user experience"
+      title: "Backend Development",
+      description: "Building secure, scalable, and efficient backend systems with Node.js, Express.js, and MongoDB."
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Problem Solving",
-      description: "Analytical thinking and efficient solutions to complex development challenges"
+      description: "Analytical thinking, DSA practice, and writing optimized solutions for complex problems."
     }
   ];
 
@@ -60,29 +60,26 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 leading-relaxed">
-                Hi, I'm <span className="font-semibold text-blue-600">Geeta Thakur</span>, a passionate 
-                B.Tech CSE student in my 4th year at Gyan Ganga College of Technology, 
-                with a current CGPA of 7.44.  
-                I enjoy building dynamic web applications and aspire to grow as a 
-                MERN Stack Developer and Full-Stack Software Engineer.
-
+                Hi, I'm <span className="font-semibold text-blue-600">Geeta Thakur</span>, a final-year
+                B.Tech CSE student at Gyan Ganga College of Technology passionate about building scalable and efficient web applications. 
+                With hands-on experience in the MERN stack (MongoDB, Express.js, React.js, Node.js), 
+                I enjoy transforming ideas into responsive, dynamic solutions that solve real-world problems.
             </p>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              My journey in technology began with a curiosity about how digital experiences are created.  
-              I specialize in full-stack development and problem-solving through code to tackle real-world challenges.  
-              I am passionate about using technology to create impactful and efficient solutions.  
+              My journey in technology began with curiosity about how things work, which grew into a strong 
+              foundation in full-stack development, databases, and problem-solving. I aim to use technology to 
+              create impactful solutions that are both user-friendly and efficient.
 
             </p>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              I believe in creating digital solutions that are not only functional but also efficient and impactful.  
-              My goal is to bridge the gap between ideas and implementation by building scalable applications that solve real-world problems.  
-
+              I’m also continuously improving my skills in Data Structures & Algorithms (DSA) to strengthen 
+              my problem-solving ability and write optimized code.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-4">
-              {['C/C++', 'JavaScript', 'React.js','Node.js', 'Express.js', 'MongoDB', 'SQL','HTML/CSS','Tailwind'].map((tech) => (
+              {['C/C++', 'DSA', 'JavaScript', 'React.js','Node.js', 'Express.js', 'MongoDB', 'SQL','HTML/CSS','Tailwind', 'Git/GitHub'].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-white rounded-full text-gray-700 border border-gray-200 hover:border-blue-300 transition-colors duration-300"

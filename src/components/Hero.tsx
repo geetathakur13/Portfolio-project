@@ -154,7 +154,7 @@ const Hero = () => {
                   transition={{ duration: 0.8, delay: 1 }}
                 >
                   <h2 className="text-2xl lg:text-3xl font-light text-gray-300 relative z-10">
-                    fullstack developer
+                    Fullstack Developer
                   </h2>
                   <motion.div 
                     className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full opacity-60"
@@ -170,9 +170,8 @@ const Hero = () => {
               className="text-xl text-gray-300 leading-relaxed max-w-lg font-light"
               variants={itemVariants}
             >
-                B.Tech Computer Science Engineering student passionate about building user-friendly and visually appealing web applications.
-                Skilled in React.js, modern frontend frameworks, and backend technologies, with a strong focus on 
-                delivering efficient and scalable solutions.
+                B.Tech Computer Science Engineering student and aspiring Full Stack Developer with a strong foundation in programming and DSA. 
+                Skilled in React.js, Node.js, Express, and MongoDB, with a focus on building efficient, scalable, and user-friendly web applications.
             </motion.p>
 
             <motion.div 
@@ -217,7 +216,7 @@ const Hero = () => {
               variants={itemVariants}
             >
               <motion.a 
-                href="https://github.com/nehatkr" 
+                href="https://github.com/geetathakur13" 
                 className="p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
                 variants={socialIconVariants}
                 whileHover="hover"
@@ -225,7 +224,7 @@ const Hero = () => {
                 <Github size={24} className="text-white" />
               </motion.a>
               <motion.a 
-                href="https://www.linkedin.com/in/neha-tkr/" 
+                href="https://www.linkedin.com/in/geeta-thakur-74a67328b" 
                 className="p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
                 variants={socialIconVariants}
                 whileHover="hover"
@@ -233,7 +232,7 @@ const Hero = () => {
                 <Linkedin size={24} className="text-white" />
               </motion.a>
               <motion.a 
-                href="nehath8340@gmail.com" 
+                href="geetathakurr13@gmail.com" 
                 className="p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"
                 variants={socialIconVariants}
                 whileHover="hover"

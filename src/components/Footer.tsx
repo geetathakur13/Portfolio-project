@@ -12,8 +12,9 @@ const Footer = () => {
               Geeta Thakur
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
-             Frontend & Full-Stack Developer passionate about building responsive, efficient, and dynamic web applications.
-             Dedicated to turning ideas into functional, high-quality digital solutions.
+             Full Stack Developer passionate about building responsive, efficient, and dynamic web applications.
+             Skilled in React.js, Node.js, and databases, with a focus on delivering scalable solutions.
+             Dedicated to turning ideas into high-quality, real-world digital products.
             </p>
             <div className="flex items-center space-x-2 text-gray-400">
               <GraduationCap size={16} />
@@ -62,8 +63,8 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-400 text-sm">
-              Open to internships and opportunities in MERN stack, full-stack, and frontend development.
-              Excited to collaborate on innovative projects and build impactful web applications.
+              Open to internships and entry-level opportunities in MERN stack, full-stack, and frontend development.
+              Passionate about building scalable web applications and contributing to impactful projects.
             </p>
           </div>
         </div>

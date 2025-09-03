@@ -72,10 +72,9 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                I am a 4th-year Computer Science student focused on full-stack web development,
-                with hands-on experience in the MERN stack. I enjoy transforming ideas into responsive,
-                efficient, and user-friendly web applications while continuously improving my technical skills.
-                Whether you have a question, want to discuss a project, or just want to say hi, I'd love to hear from you!
+                I’m a final-year Computer Science student specializing in full-stack web development with hands-on MERN stack experience.
+                I enjoy building responsive, efficient, and user-friendly applications. 
+                Whether you’d like to discuss opportunities, projects, or collaborations, feel free to reach out!
               </p>
             </div>
 
@@ -129,8 +128,8 @@ const Contact = () => {
                 <h4 className="font-semibold text-green-800">Available for Opportunities</h4>
               </div>
               <p className="text-green-700 text-sm">
-                Currently seeking internships and entry-level roles in MERN stack, full-stack
-                development, and software engineering.
+                Available for internships and entry-level opportunities in MERN stack, full-stack development, and software engineering.
+                Excited to contribute to innovative projects and grow with dynamic teams.
               </p>
             </div>
           </div>

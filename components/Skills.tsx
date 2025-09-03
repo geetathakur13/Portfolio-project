@@ -25,42 +25,35 @@ const Skills = () => {
     {
       year: '2022',
       title: 'Programming Foundations',
-      skills: ['C', 'C++', 'Problem Solving'],
+      skills: ['C++', 'Problem Solving'],
       description: 'Started my programming journey with core languages and algorithmic thinking during my first year of B.Tech.',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       year: '2023',
       title: 'Web Development Basics',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Git'],
+      skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'Responsive Design'],
       description: 'Learned web fundamentals and version control systems. Built my first static websites and discovered my passion for frontend development.',
       color: 'from-purple-500 to-pink-500'
     },
     {
       year: '2024',
-      title: 'Frontend Frameworks & Design',
-      skills: ['React.js', 'Tailwind CSS', 'Responsive Design', 'Express.js', 'Figma'],
-      description: 'Mastered modern frontend development with React and utility-first CSS. Started exploring UI/UX design principles and tools.',
+      title: 'Frontend Frameworks',
+      skills: ['React.js', 'Tailwind CSS', 'TypeScript'],
+      description: 'Mastered modern frontend development with React and utility-first CSS. Explored component-driven design and scalable UI patterns.',
       color: 'from-green-500 to-teal-500'
     },
     {
       year: '2025',
       title: 'Backend & Database Integration',
-      skills: ['Node.js', 'MongoDB', 'SQL', 'API Integration'],
-      description: 'Expanded to backend services and database management. Built full-stack applications with real-time features.',
+      skills: ['Node.js', 'Express.js', 'MongoDB', 'SQL', 'REST APIs', 'Authentication', 'Deployment'],
+      description: 'Expanded to backend services and database management. Built full-stack applications with real-time features and authentication.',
       color: 'from-orange-500 to-red-500'
     },
     {
       year: '2025',
-      title: 'Advanced UI/UX & Tools',
-      skills: ['Advanced Figma', 'User Research', 'Prototyping', 'Design Systems'],
-      description: 'Deepened my UI/UX expertise with advanced design tools, user research methodologies, and design system creation.',
-      color: 'from-indigo-500 to-purple-500'
-    },
-    {
-      year: '2026',
       title: 'Professional Development',
-      skills: ['Full Stack Development', 'Project Management', 'Team Collaboration', 'Industry Best Practices'],
+      skills: ['Full Stack Development', 'Project Management', 'Team Collaboration', 'Agile','Industry Best Practices'],
       description: 'Showcase skills in full-stack development, ready to contribute to professional projects and teams.',
       color: 'from-pink-500 to-rose-500'
     }
@@ -70,9 +63,11 @@ const Skills = () => {
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'C', level: 85 },
+        { name: 'C', level: 50 },
         { name: 'C++', level: 80 },
-        { name: 'SQL', level: 75 }
+        { name: 'JavaScript', level: 85 },
+        { name: 'SQL', level: 75 },
+        { name: 'TypeScript', level: 70 }
       ],
       color: 'from-blue-500 to-cyan-500'
     },
@@ -83,7 +78,8 @@ const Skills = () => {
         { name: 'CSS', level: 90 },
         { name: 'JavaScript', level: 85 },
         { name: 'React.js', level: 90 },
-        { name: 'Tailwind CSS', level: 95 }
+        { name: 'Tailwind CSS', level: 95 },
+        { name: 'Responsive Design', level: 90 }
       ],
       color: 'from-purple-500 to-pink-500'
     },
@@ -93,7 +89,9 @@ const Skills = () => {
         { name: 'Node.js', level: 80 },
         { name: 'Express.js', level: 75 },
         { name: 'MongoDB', level: 70 },
-        { name: 'API Development', level: 85 }
+        { name: 'SQL', level: 75 },
+        { name: 'REST APIs', level: 85 },
+        { name: 'Authentication (JWT/Firebase)', level: 80 }
       ],
       color: 'from-green-500 to-teal-500'
     },
@@ -102,7 +100,9 @@ const Skills = () => {
       skills: [
         { name: 'Git', level: 85 },
         { name: 'GitHub', level: 85 },
-        { name: 'VS Code', level: 95 }
+        { name: 'VS Code', level: 95 },
+        { name: 'Postman', level: 80 },
+        { name: 'Firebase', level: 70 }
       ],
       color: 'from-orange-500 to-red-500'
     }
@@ -117,7 +117,7 @@ const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My evolution from a curious beginner to a skilled frontend developer and UI/UX designer
+            My journey from learning the basics of programming to becoming a full stack developer capable of designing and deploying complete web solutions.
           </p>
         </div>
 

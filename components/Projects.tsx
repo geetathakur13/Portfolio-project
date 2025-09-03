@@ -249,7 +249,7 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of my recent work combining MERN and UI/UX design
+            A showcase of my recent work in full-stack web development using the MERN stack.
           </p>
         </div>
 
@@ -350,8 +350,8 @@ const Projects = () => {
           <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">More Projects Coming Soon!</h3>
             <p className="text-gray-600 mb-6">
-              I'm constantly working on new projects and learning new technologies. 
-              Check back soon for more exciting developments in MERN and UI/UX design!
+              Currently building full-stack applications with the MERN stack and modern web technologies. 
+              Stay tuned for upcoming projects showcasing scalable and efficient solutions.
             </p>
             <div className="flex justify-center space-x-4">
               <a
