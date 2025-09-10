@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Calendar, Users, Search, Briefcase, Scissors, Film, X, CheckCircle, Clock, Star, Code, Database, Palette, Zap } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Search, Briefcase,Wallet, TrendingUp, Shield, Smartphone, BarChart, Film, X, CheckCircle, Clock, Star, Code, Database, Zap, BookOpen } from 'lucide-react';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -14,8 +14,8 @@ const Projects = () => {
       technologies: ['React.js', 'shadcn/ui', 'Tailwind CSS', 'Clerk Auth', 'Supabase'],
       liveUrl: '#',
       githubUrl: '#',
-      status: 'OPEN',
-      date: 'Jan 2024',
+      status: 'COMPLETED',
+      date: 'JAN 2025',
       icon: <Briefcase className="w-6 h-6" />,
       features: [
         'Job posting and application system',
@@ -64,62 +64,63 @@ const Projects = () => {
       }
     },
     {
-      title: 'Glowbook - SaaS Parlour Management',
-      description: 'Full-stack SaaS platform for beauty parlours with subscription-based architecture, tiered pricing plans, and comprehensive business management tools including appointment scheduling and analytics.',
-      detailedDescription: 'Glowbook revolutionizes beauty parlour management with a comprehensive SaaS solution. Built with modern web technologies, it offers subscription-based access to powerful business management tools.',
-      image: 'https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Node.js', 'Firebase', 'Tailwind CSS', 'WhatsApp API'],
-      liveUrl: '#',
-      githubUrl: '#',
-      status: 'COMPLETED',
-      date: 'Mar 2024',
-      icon: <Scissors className="w-6 h-6" />,
-      features: [
-        'Subscription-based pricing plans',
-        'Appointment scheduling system',
-        'Customer management',
-        'WhatsApp integration',
-        'Admin dashboard with analytics'
-      ],
-      detailedFeatures: [
-        {
-          title: 'Multi-tier Subscription System',
-          description: 'Flexible pricing plans with feature-gated access, automated billing, and subscription management.',
-          icon: <Star className="w-5 h-5" />
-        },
-        {
-          title: 'Smart Appointment Scheduling',
-          description: 'Drag-and-drop calendar interface with conflict detection, automated reminders, and staff allocation.',
-          icon: <Calendar className="w-5 h-5" />
-        },
-        {
-          title: 'WhatsApp Business Integration',
-          description: 'Automated appointment confirmations, reminders, and customer communication through WhatsApp API.',
-          icon: <Zap className="w-5 h-5" />
-        },
-        {
-          title: 'Business Analytics Dashboard',
-          description: 'Revenue tracking, customer insights, service performance metrics, and growth analytics.',
-          icon: <Database className="w-5 h-5" />
-        }
-      ],
-      challenges: [
-        'Implementing complex subscription logic with feature gates',
-        'Integrating WhatsApp Business API for automated communications',
-        'Building scalable multi-tenant architecture'
-      ],
-      learnings: [
-        'SaaS architecture patterns and subscription management',
-        'Third-party API integration and webhook handling',
-        'Business analytics and data visualization'
-      ],
-      metrics: {
-        'Active Users': '500+',
-        'Appointments Managed': '10,000+',
-        'Revenue Generated': '$50,000+',
-        'Customer Satisfaction': '4.8/5'
-      }
+  title: 'Personal Finance Tracker',
+  description: 'A modern finance tracking app to manage income, expenses, and savings with real-time analytics and visual dashboards.',
+  detailedDescription: 'Personal Finance Tracker empowers users to take control of their money by providing categorized expense tracking, income monitoring, and interactive charts. Built with React, Firebase, and Tailwind, it delivers a smooth and secure user experience.',
+  image: 'https://images.pexels.com/photos/4386366/pexels-photo-4386366.jpeg?auto=compress&cs=tinysrgb&w=800',
+  technologies: ['React.js', 'Firebase', 'Tailwind CSS', 'Chart.js', 'Vercel'],
+  liveUrl: '#',
+  githubUrl: '#',
+  status: 'COMPLETED',
+  date: 'OCT 2024',
+  icon: <Wallet className="w-6 h-6" />,
+  features: [
+    'Income & expense tracking with categories',
+    'Interactive analytics dashboard',
+    'Secure Firebase authentication',
+    'Real-time updates with Firestore',
+    'Responsive design for all devices'
+  ],
+  detailedFeatures: [
+    {
+      title: 'Income & Expense Management',
+      description: 'Track income and expenses by categories with the ability to add, edit, and delete transactions.',
+      icon: <TrendingUp className="w-5 h-5" />
     },
+    {
+      title: 'Analytics Dashboard',
+      description: 'Dynamic visualizations with charts and graphs for better financial insights.',
+      icon: <BarChart className="w-5 h-5" />
+    },
+    {
+      title: 'Firebase Authentication',
+      description: 'Secure user login, sign-up, and sync of financial data across devices.',
+      icon: <Shield className="w-5 h-5" />
+    },
+    {
+      title: 'Responsive UI',
+      description: 'A clean and optimized interface that works seamlessly on desktop, tablet, and mobile devices.',
+      icon: <Smartphone className="w-5 h-5" />
+    }
+  ],
+  challenges: [
+    'Designing an intuitive and minimal UI for financial data',
+    'Handling real-time updates with Firebase efficiently',
+    'Integrating Chart.js with dynamic transaction data'
+  ],
+  learnings: [
+    'Firebase authentication and Firestore best practices',
+    'Data visualization with Chart.js',
+    'Building responsive layouts with Tailwind CSS'
+  ],
+  metrics: {
+    'Transactions Tracked': '5,000+',
+    'Active Users': '100+',
+    'Line Of Code': '8,000+',
+    'Website Loading Time': '0.4ms'
+  }
+},
+
     {
       title: 'AI-Powered Movie Suggestion Website',
       description: 'Large-scale movie recommendation platform with AI-powered search using ChatGPT integration. Features Redux state management for movie data and comprehensive user authentication system.',
@@ -129,7 +130,7 @@ const Projects = () => {
       liveUrl: '#',
       githubUrl: '#',
       status: 'COMPLETED',
-      date: 'Feb 2024',
+      date: 'JUNE 2025',
       icon: <Film className="w-6 h-6" />,
       features: [
         'AI-powered movie suggestions',

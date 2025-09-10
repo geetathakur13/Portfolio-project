@@ -1,123 +1,67 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Github, Calendar, Search, Briefcase, Scissors, Film, X, CheckCircle, Clock, Star, Code, Database, Zap, BookOpen } from 'lucide-react';
+import { ExternalLink, Github, Calendar, Search, Briefcase,Wallet, TrendingUp, Shield, Smartphone, BarChart, Film, X, CheckCircle, Clock, Star, Code, Database, Zap, BookOpen } from 'lucide-react';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const projects = [
+
     {
-      title: 'HireSpace (JobConnect Website)',
-      description: 'A comprehensive job portal enabling users to create job posts, apply for positions, track hiring status, and save jobs. Features seamless recruiter functionality for posting, updating, and deleting job openings.',
-      detailedDescription: 'HireSpace is a full-featured job portal that bridges the gap between job seekers and recruiters. The platform provides a comprehensive solution for modern hiring needs with an intuitive interface and powerful backend capabilities.',
-      image: '/Screenshot 2025-07-11 093114.png',
-      technologies: ['React.js', 'shadcn/ui', 'Tailwind CSS', 'Clerk Auth', 'Supabase'],
-      liveUrl: 'https://hire-space-orpin.vercel.app/',
-      githubUrl: 'https://github.com/nehatkr/HireSpace',
-      status: 'COMPLETED',
-      date: 'Apr 2024',
-      icon: <Briefcase className="w-6 h-6" />,
-      features: [
-        'Job posting and application system',
-        'Hiring status tracking',
-        'Save jobs for later functionality',
-        'Recruiter dashboard',
-        'Authentication with Clerk'
-      ],
-      detailedFeatures: [
-        {
-          title: 'User Authentication & Management',
-          description: 'Secure sign-up and login system using Clerk.Supports session-based auth and role-based access (candidate/employer)',
-          icon: <Briefcase className="w-5 h-5" />
-        },
-        {
-          title: 'Modern Frontend UI',
-          description: 'Built with React.js, providing a seamless single-page application experience. Fully responsive design for desktop,and mobile.Clean, professional UI for a job-seeking platform',
-          icon: <Clock className="w-5 h-5" />
-        },
-        {
-          title: 'Job Posting System (for Employers)',
-          description: 'Employers can create, update, and delete job listings.Include job title, description, category, salary, location, and skills required',
-          icon: <Star className="w-5 h-5" />
-        },
-        {
-          title: 'Job Search & Filters (for Candidates)',
-          description: 'Smart job search functionality. Filter by job title, company, location, and category',
-          icon: <Zap className="w-5 h-5" />
-        }
-      ],
-      challenges: [
-        'Designing relational tables and handling real-time updates required a deep understanding of Supabases structure and queries.',
-        'Designing scalable database schema for complex job-candidate relationships',
-        'Creating responsive UI that works seamlessly across all devices'
-      ],
-      learnings: [
-        'Advanced React patterns and state management',
-        'Supabase real-time subscriptions and RLS policies',
-        'User experience design for complex workflows'
-      ],
-      metrics: {
-        'Lines of Code': '15,000+',
-        'Components': '45+',
-        'Database Tables': '8',
-        'Website Loading Time': '0.5ms'
-      }
-    },
-    {
-      title: 'Glowbook - SaaS Parlour Management',
-      description: 'Full-stack SaaS platform for beauty parlours with subscription-based architecture, tiered pricing plans, and comprehensive business management tools including appointment scheduling and analytics.',
-      detailedDescription: 'Glowbook revolutionizes beauty parlour management with a comprehensive SaaS solution. Built with modern web technologies, it offers subscription-based access to powerful business management tools.',
-      image: '/Screenshot 2025-07-09 153519.png',
-      technologies: ['React.js', 'Node.js', 'Firebase', 'Tailwind CSS', 'WhatsApp API'],
-      liveUrl: '#',
-      githubUrl: 'https://github.com/Spark-Mithila/GlowBook',
+      title: 'StudyHouse - Academic Resource Sharing',
+      description: 'Full-stack academic resource-sharing platform enabling 100+ students to upload, search, and download notes, PYQs, and syllabus documents with role-based authentication and real-time features.',
+      detailedDescription: 'StudyHouse is a comprehensive academic resource-sharing web application designed to streamline the process of sharing and accessing educational materials. Built with modern web technologies, it provides a secure and efficient platform for students to collaborate and share academic resources.',
+      image: '/Screenshot 2025-08-06 101719.png',
+      technologies: ['React.js', 'Tailwind CSS', 'Firebase Auth', 'Firestore', 'Firebase Storage', 'Vercel'],
+      liveUrl: 'https://study-house-orpin.vercel.app/',
+      githubUrl: 'https://github.com/geetathakur13/Study-House',
       status: 'OPEN',
       date: 'PRESENT',
-      icon: <Scissors className="w-6 h-6" />,
+      icon: <BookOpen className="w-6 h-6" />,
       features: [
-        'Subscription-based pricing plans',
-        'Appointment scheduling system',
-        'Customer management',
-        'WhatsApp integration',
-        'Admin dashboard with analytics'
+        'Role-based authentication system',
+        'Document upload and management',
+        'Advanced search and filtering',
+        'Real-time comments and ratings',
+        'Admin dashboard for approvals'
       ],
       detailedFeatures: [
         {
-          title: 'Multi-tier Subscription System',
-          description: 'Flexible pricing plans with feature-gated access, automated billing, and subscription management.',
+          title: 'Role-Based Authentication System',
+          description: 'Three-tier user system (Viewer, Contributor, Admin) with Firebase Auth integration, providing secure access control and enhanced security.',
           icon: <Star className="w-5 h-5" />
         },
         {
-          title: 'Smart Appointment Scheduling',
-          description: 'Drag-and-drop calendar interface with conflict detection, automated reminders, and staff allocation.',
-          icon: <Calendar className="w-5 h-5" />
+          title: 'Contributor Application Workflow',
+          description: 'Modal-based application system with data collection for roll numbers, batch, and semester details, plus admin dashboard for approval management.',
+          icon: <CheckCircle className="w-5 h-5" />
         },
         {
-          title: 'WhatsApp Business Integration',
-          description: 'Automated appointment confirmations, reminders, and customer communication through WhatsApp API.',
-          icon: <Zap className="w-5 h-5" />
-        },
-        {
-          title: 'Business Analytics Dashboard',
-          description: 'Revenue tracking, customer insights, service performance metrics, and growth analytics.',
+          title: 'Real-time Document Management',
+          description: 'Firebase Cloud Storage and Firestore integration for instant document storage, retrieval, and metadata management with real-time updates.',
           icon: <Database className="w-5 h-5" />
+        },
+        {
+          title: 'Interactive User Features',
+          description: 'Comment sections, rating systems, and contributor contact information to enhance user engagement and community interaction.',
+          icon: <Zap className="w-5 h-5" />
         }
       ],
       challenges: [
-        'Implementing complex subscription logic with feature gates',
-        'Integrating WhatsApp Business API for automated communications',
-        'Building scalable multi-tenant architecture'
+        'Implementing secure role-based access control with Firebase Auth',
+        'Building efficient search and filter functionality for large document collections',
+        'Creating a seamless contributor approval workflow with real-time updates'
       ],
       learnings: [
-        'SaaS architecture patterns and subscription management',
-        'Third-party API integration and webhook handling',
-        'Business analytics and data visualization'
+        'Advanced Firebase services integration (Auth, Firestore, Storage)',
+        'Role-based access control implementation and security best practices',
+        'Real-time data synchronization and state management'
       ],
       metrics: {
-        // 'Active Users': '500+',
-        'Line Of Code': '20,000+',
-        'Website  Loading Time': '0.3ms',
-        // 'Customer Satisfaction': '4.8/5'
+        'Active Users': '100+',
+        'Documents Shared': '500+',
+        'Search Speed': '<5 seconds',
+        'Uptime': '99.9%'
       }
     },
     {
@@ -126,10 +70,10 @@ const Projects = () => {
       detailedDescription: 'An intelligent movie discovery platform that leverages AI to provide personalized recommendations. Built with modern React architecture and integrated with ChatGPT for natural language movie queries.',
       image: '/Screenshot 2025-07-09 214558.png',
       technologies: ['React.js', 'Tailwind CSS', 'Firebase', 'ChatGPT API', 'Redux'],
-      liveUrl: 'https://netflixgpt-rho-one.vercel.app/',
-      githubUrl: 'https://github.com/nehatkr/netflix-gpt',
+      liveUrl: 'https://netflix-gpt-two-gamma.vercel.app/',
+      githubUrl: 'https://github.com/geetathakur13/Netflix-gpt',
       status: 'COMPLETED',
-      date: 'JUNE 2024',
+      date: 'JUNE 2025',
       icon: <Film className="w-6 h-6" />,
       features: [
         'AI-powered movie suggestions',
@@ -178,62 +122,118 @@ const Projects = () => {
       }
     },
     {
-      title: 'StudyStack - Academic Resource Sharing',
-      description: 'Full-stack academic resource-sharing platform enabling 100+ students to upload, search, and download notes, PYQs, and syllabus documents with role-based authentication and real-time features.',
-      detailedDescription: 'StudyStack is a comprehensive academic resource-sharing web application designed to streamline the process of sharing and accessing educational materials. Built with modern web technologies, it provides a secure and efficient platform for students to collaborate and share academic resources.',
-      image: '/Screenshot 2025-08-06 101719.png',
-      technologies: ['React.js', 'Tailwind CSS', 'Firebase Auth', 'Firestore', 'Firebase Storage', 'Vercel'],
-      liveUrl: 'https://study-stack-major.vercel.app/',
-      githubUrl: 'https://github.com/nehatkr/StudyStack-major-',
+      title: 'HireSpace (JobConnect Website)',
+      description: 'A comprehensive job portal enabling users to create job posts, apply for positions, track hiring status, and save jobs. Features seamless recruiter functionality for posting, updating, and deleting job openings.',
+      detailedDescription: 'HireSpace is a full-featured job portal that bridges the gap between job seekers and recruiters. The platform provides a comprehensive solution for modern hiring needs with an intuitive interface and powerful backend capabilities.',
+      image: '/Screenshot 2025-07-11 093114.png',
+      technologies: ['React.js', 'shadcn/ui', 'Tailwind CSS', 'Clerk Auth', 'Supabase'],
+      liveUrl: 'https://job-portal-tan-sigma.vercel.app/',
+      githubUrl: 'https://github.com/geetathakur13/job-portal',
       status: 'COMPLETED',
-      date: 'JUNE 2025',
-      icon: <BookOpen className="w-6 h-6" />,
+      date: 'JAN 2025',
+      icon: <Briefcase className="w-6 h-6" />,
       features: [
-        'Role-based authentication system',
-        'Document upload and management',
-        'Advanced search and filtering',
-        'Real-time comments and ratings',
-        'Admin dashboard for approvals'
+        'Job posting and application system',
+        'Hiring status tracking',
+        'Save jobs for later functionality',
+        'Recruiter dashboard',
+        'Authentication with Clerk'
       ],
       detailedFeatures: [
         {
-          title: 'Role-Based Authentication System',
-          description: 'Three-tier user system (Viewer, Contributor, Admin) with Firebase Auth integration, providing secure access control and enhanced security.',
+          title: 'User Authentication & Management',
+          description: 'Secure sign-up and login system using Clerk.Supports session-based auth and role-based access (candidate/employer)',
+          icon: <Briefcase className="w-5 h-5" />
+        },
+        {
+          title: 'Modern Frontend UI',
+          description: 'Built with React.js, providing a seamless single-page application experience. Fully responsive design for desktop,and mobile.Clean, professional UI for a job-seeking platform',
+          icon: <Clock className="w-5 h-5" />
+        },
+        {
+          title: 'Job Posting System (for Employers)',
+          description: 'Employers can create, update, and delete job listings.Include job title, description, category, salary, location, and skills required',
           icon: <Star className="w-5 h-5" />
         },
         {
-          title: 'Contributor Application Workflow',
-          description: 'Modal-based application system with data collection for roll numbers, batch, and semester details, plus admin dashboard for approval management.',
-          icon: <CheckCircle className="w-5 h-5" />
-        },
-        {
-          title: 'Real-time Document Management',
-          description: 'Firebase Cloud Storage and Firestore integration for instant document storage, retrieval, and metadata management with real-time updates.',
-          icon: <Database className="w-5 h-5" />
-        },
-        {
-          title: 'Interactive User Features',
-          description: 'Comment sections, rating systems, and contributor contact information to enhance user engagement and community interaction.',
+          title: 'Job Search & Filters (for Candidates)',
+          description: 'Smart job search functionality. Filter by job title, company, location, and category',
           icon: <Zap className="w-5 h-5" />
         }
       ],
       challenges: [
-        'Implementing secure role-based access control with Firebase Auth',
-        'Building efficient search and filter functionality for large document collections',
-        'Creating a seamless contributor approval workflow with real-time updates'
+        'Designing relational tables and handling real-time updates required a deep understanding of Supabases structure and queries.',
+        'Designing scalable database schema for complex job-candidate relationships',
+        'Creating responsive UI that works seamlessly across all devices'
       ],
       learnings: [
-        'Advanced Firebase services integration (Auth, Firestore, Storage)',
-        'Role-based access control implementation and security best practices',
-        'Real-time data synchronization and state management'
+        'Advanced React patterns and state management',
+        'Supabase real-time subscriptions and RLS policies',
+        'User experience design for complex workflows'
       ],
       metrics: {
-        'Active Users': '100+',
-        'Documents Shared': '500+',
-        'Search Speed': '<5 seconds',
-        'Uptime': '99.9%'
+        'Lines of Code': '15,000+',
+        'Components': '45+',
+        'Database Tables': '8',
+        'Website Loading Time': '0.5ms'
       }
+    },
+    {
+  title: 'Personal Finance Tracker',
+  description: 'A modern web app to track income, expenses, and savings with interactive dashboards and real-time data updates.',
+  detailedDescription: 'Personal Finance Tracker helps users gain control over their finances by offering features like income/expense categorization, transaction history, and visual insights through charts. Built with React and Firebase, it ensures seamless performance and secure data management.',
+  image: 'Screenshot 2025-09-10 205515.png', 
+  technologies: ['React.js', 'Firebase', 'Tailwind CSS', 'Chart.js', 'Vercel'],
+  liveUrl: 'https://personal-finance-tracker-flax-beta.vercel.app/',
+  githubUrl: 'https://github.com/geetathakur13/personal-finance-tracker',
+  status: 'COMPLETED',
+  date: 'OCT 2024',
+  icon: <Wallet className="w-6 h-6" />,
+  features: [
+    'Track income and expenses with categories',
+    'Interactive financial charts and insights',
+    'Secure authentication with Firebase',
+    'Real-time updates and cloud storage',
+    'Responsive design for mobile and desktop'
+  ],
+  detailedFeatures: [
+    {
+      title: 'Income & Expense Management',
+      description: 'Add, edit, and delete transactions with categorized labels for better financial tracking.',
+      icon: <TrendingUp className="w-5 h-5" />
+    },
+    {
+      title: 'Analytics Dashboard',
+      description: 'Dynamic charts and graphs powered by Chart.js for financial visualization.',
+      icon: <BarChart className="w-5 h-5" />
+    },
+    {
+      title: 'Firebase Authentication',
+      description: 'Secure sign-up, login, and real-time sync of financial data.',
+      icon: <Shield className="w-5 h-5" />
+    },
+    {
+      title: 'Responsive UI',
+      description: 'Optimized interface for mobile, tablet, and desktop devices with Tailwind CSS.',
+      icon: <Smartphone className="w-5 h-5" />
     }
+  ],
+  challenges: [
+    'Designing a clean and intuitive user interface',
+    'Handling real-time data updates efficiently',
+    'Integrating charts with dynamic transaction data'
+  ],
+  learnings: [
+    'Best practices for Firebase authentication and Firestore usage',
+    'Data visualization with Chart.js',
+    'Responsive UI development with Tailwind CSS'
+  ],
+  metrics: {
+    'Line Of Code': '8,000+',
+    'Website Loading Time': '0.4ms',
+    // 'Active Users': '100+'
+  }
+}
   ];
 
   const getStatusColor = (status: string) => {
@@ -408,7 +408,7 @@ const Projects = () => {
             <h3 className="text-2xl font-bold text-gray-800 mb-4">More Projects Coming Soon!</h3>
             <p className="text-gray-600 mb-6">
               Currently building full-stack applications with the MERN stack and modern web technologies. 
-              Stay tuned for upcoming projects showcasing scalable and efficient solutions.
+              Stay tuned for upcoming projects showcasing scalable and efficient solutions. 
             </p>
             <div className="flex justify-center space-x-4">
               <a
